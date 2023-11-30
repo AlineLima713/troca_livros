@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react-native",
+    "allowImportingTsExtensions": true
+  },
+  "extends": "expo/tsconfig.base",
+
+}
