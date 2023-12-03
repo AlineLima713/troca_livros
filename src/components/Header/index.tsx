@@ -1,9 +1,10 @@
-import { Container, Title } from "./styles.ts";
+import { Container, Welcome, Title } from "./styles.ts";
 
 export function Header() {
   return (
     <Container>
-      <Title>cabeçalho</Title>
+      <Welcome>Bem-vindo ao</Welcome>
+      <Title>TROCA LIVROS</Title>
     </Container>
   )
 }
