@@ -4,25 +4,21 @@ import styled from "styled-components/native";
 export const Container = styled.View`
   flex: 1;
   align-items: center;
-  /* flex-direction: column; */
 `;
 
 export const Circle = styled.View`
-  /* flex: 1; */
   width: 820px;
   height: 820px;
   border-radius: 410px;
   background-color: #BEB6F5;
-  /* justify-content: space-between; */
-  /* flex-direction: column; */
   align-items: center;
 `;
 
 export const Image = styled.Image`
-  width: 400px;
-  height: 385px;
+  /* width: 400px; */
+  /* height: 385px; */
   margin-top: 80px;
-  margin-left: 70px;
+  margin-left: 55px;
   object-fit: contain;
 `;
 

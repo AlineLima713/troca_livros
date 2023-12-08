@@ -43,7 +43,7 @@ export default function App() {
 
   return (
     <View onLayout={onLayoutRootView}>
-      <StatusBar backgroundColor="#1d1d2e" barStyle="light-content" translucent={false} />
+      <StatusBar backgroundColor="#ffffff" barStyle="dark-content" translucent={false} />
       <Dashboard />
     </View>
   );
