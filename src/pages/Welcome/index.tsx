@@ -10,16 +10,21 @@ import {
   Button_Title,
 } from "./styles.ts";
 
-import { Header } from "../../components/Header";
+import { useNavigation } from "@react-navigation/native";
 
-export default function Dashboard() {
+import { Header } from "../../components/Header/index.tsx";
+
+export function Welcome() {
+  const { navigate } = useNavigation();
   return (
     <Container>
       <Header />
       <Circle>
         <Image source={require('../../../assets/cat-lying-on-books.png')} />
         <View style={{
-          backgroundColor: "#fff",
+          width: 258,
+          height: 47,
+          backgroundColor: "#ffffff",
           borderRadius: 4,
           shadowColor: "#000",
           shadowOffset: { width: 0, height: 2 },
@@ -27,7 +32,7 @@ export default function Dashboard() {
           shadowRadius: 3.84,
           elevation: 5
         }}>
-          <Login_Button>
+          <Login_Button activeOpacity={0.1} underlayColor="#E5E5E588" onPress={() => navigate('login')}>
             <Title_Login>Login</Title_Login>
           </Login_Button>
         </View>

@@ -4,6 +4,7 @@ import styled from "styled-components/native";
 export const Container = styled.View`
   flex: 1;
   align-items: center;
+  background-color: #FFFFFF;
 `;
 
 export const Circle = styled.View`
@@ -22,10 +23,8 @@ export const Image = styled.Image`
   object-fit: contain;
 `;
 
-export const Login_Button = styled.TouchableOpacity`
-    width: 258px;
-    height: 47px;
-    background-color: #FFFFFF;
+export const Login_Button = styled.TouchableHighlight`
+    flex: 1;
     border-radius: 4px;
     justify-content: center;
     align-items: center;

@@ -7,7 +7,7 @@ import { Inter_400Regular, Inter_600SemiBold, Inter_700Bold } from '@expo-google
 
 SplashScreen.preventAutoHideAsync();
 
-import Dashboard from './src/pages/Dashboard';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [isReady, setIsReady] = useState<boolean>(false);
@@ -42,9 +42,9 @@ export default function App() {
   }
 
   return (
-    <View onLayout={onLayoutRootView}>
+    <View style={{ flex: 1 }} onLayout={onLayoutRootView}>
       <StatusBar backgroundColor="#ffffff" barStyle="dark-content" translucent={false} />
-      <Dashboard />
+      <Routes />
     </View>
   );
 }
